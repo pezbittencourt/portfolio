@@ -67,17 +67,21 @@ li a:hover::before {
 
 }
 
-.visit-btn {
+.visit-btn{
     padding: 0.8rem 1.5rem;
     border-radius: 3rem;
     border: none;
     font-weight: 500;
     font-size: 1rem;
-    color: white;
     cursor: pointer;
     text-wrap: nowrap;
     background: linear-gradient(to right, rgb(9, 104, 17), rgb(0, 41, 0));
     transition: 0.3s ease-in-out;
+}
+
+.visit-btn a{ 
+    color: white;
+    text-decoration: none;
 }
 
 .visit-btn:hover {
@@ -157,6 +161,11 @@ section {
     transition: 0.2s ease-in-out;
 }
 
+.btn a {
+    color: black;
+    font-weight: 500;
+}
+
 .btn:hover {
     background-color: black;
     color: white;
@@ -165,6 +174,12 @@ section {
 .socials {
     display: flex;
     gap: 2rem;
+}
+
+
+.socials a {
+    color: black;
+    font-weight: 600;
 }
 
 .socials i {
@@ -529,16 +544,15 @@ footer ul {
     margin-top: 25px;
     margin-left: 10px;
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 5px;
-    position: relative;
+    position: fixed;
     height: 26px;
     width: 50px;
-
+    top: 10px;
+    left: 20px;
     transform: scale (1.5);
 }
 
@@ -548,13 +562,11 @@ body.dark .label {
     margin-top: 25px;
     margin-left: 10px;
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 5px;
-    position: relative;
+    position: fixed;
     height: 26px;
     width: 50px;
 
@@ -593,7 +605,8 @@ body.dark .label .ball {
 }
 
 .fa-moon {
-    background-color: #ffffff;
+    background-color: #000000;
+    color: white;
 }
 
 .fa-sun {
